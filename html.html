@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-Pop Paradise</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #222;
+            color: #fff;
+            padding-top: 70px; /* Adjusted for fixed navbar height */
+        }
+        nav {
+            background-color: #000;
+            color: #ff6f61;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000; /* Ensure it stays above other content */
+        }
+        nav img {
+            height: 60px;
+        }
+        nav a {
+            color: #ff6f61;
+            margin: 0 18px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav .nav-links {
+            display: flex;
+            align-items: center;
+        }
+        header {
+            position: relative;
+            height: 500px;
+            text-align: center;
+            color: #fff;
+        }
+        header::before {
+            content: "";
+            background: url('background.jpeg') no-repeat center center/cover;
+            filter: blur(3px);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+        header h1 {
+            margin-top: 0;
+            padding-top: 100px;
+            font-size: 3.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        header p {
+            font-size: 1.8em;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+        }
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .section-image {
+            width: 70%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .about, .contact {
+            background-color: #333;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .about h2, .contact h2 {
+            margin-top: 0;
+        }
+        .subsection {
+            padding: 40px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .subsection h3 {
+            margin-top: 0;
+            margin-right: 20px;
+            font-size: 1.5em;
+        }
+        .subsection img {
+            width: 200px;
+            height: auto;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <img src="logo.jpg" alt="K-Pop Paradise Logo">
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#artists">Artists</a>
+            <a href="#albums">Albums</a>
+            <a href="#news">News</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact Us</a>
+        </div>
+    </nav>
+
+    <header id="home">
+        <h1>Welcome to K-Pop Paradise</h1>
+        <p>Your ultimate destination for K-pop fans</p>
+    </header>
+
+    <section id="artists">
+        <h2>Featured Artists</h2>
+        <p>Discover the hottest K-pop stars right now.</p>
+        <img src="bts.jpeg" alt="BTS" class="section-image">
+        <div class="subsection">
+            <h3>BLACKPINK</h3>
+            <p>Enjoy the powerful performances and catchy hits of BLACKPINK.</p>
+            <img src="black.jpg" alt="BLACKPINK" class="section-image">
+        </div>
+        <div class="subsection">
+            <h3>EXO</h3>
+            <p>Explore the dynamic music and incredible dance routines of EXO.</p>
+            <img src="exo.jpeg" alt="EXO" class="section-image">
+        </div>
+        <div class="subsection">
+            <h3>TWICE</h3>
+            <p>Feel the energy and charm of TWICE's vibrant music and performances.</p>
+            <img src="twice.jpeg" alt="TWICE" class="section-image">
+        </div>
+    </section>
+
+    <section id="albums">
+        <h2>Top Albums</h2>
+        <p>Check out the latest and greatest K-pop albums.</p>
+        <img src="album.jpg" alt="Albums" class="section-image">
+        <div class="subsection">
+            <h3>Map of the Soul: 7</h3>
+            <p>Experience BTS's critically acclaimed album, "Map of the Soul: 7."</p>
+            <img src="map.jpg" alt="Map of the Soul: 7" class="section-image">
+        </div>
+        <div class="subsection">
+            <h3>Born Pink</h3>
+            <p>Enjoy BLACKPINK's latest album, "Born Pink."</p>
+            <img src="born.jpeg" alt="Born Pink" class="section-image">
+        </div>
+        <div class="subsection">
+            <h3>Don't Mess Up My Tempo</h3>
+            <p>Listen to EXO's popular album, "Don't Mess Up My Tempo."</p>
+            <img src="mess.jpg" alt="Don't Mess Up My Tempo" class="section-image">
+        </div>
+    </section>
+
+    <section id="news">
+        <h2>K-Pop News</h2>
+        <p>Stay updated with the latest news from the K-pop world.</p>
+        <img src="news.jpg" alt="K-Pop News" class="section-image">
+        <div class="subsection">
+            <h3>Concert Announcements</h3>
+            <p>Find out about upcoming K-pop concerts and events.</p>
+            <img src="concert.jpg" alt="Concert" class="section-image">
+        </div>
+        <div class="subsection">
+            <h3>Music Videos</h3>
+            <p>Watch the newest K-pop music videos and performances.</p>
+            <img src="music.jpg" alt="Music Videos" class="section-image">
+        </div>
+        <div class="subsection">
+            <h3>Exclusive Interviews</h3>
+            <p>Read exclusive interviews with your favorite K-pop idols.</p>
+            <img src="interview.jpg" alt="Interviews" class="section-image">
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>We are passionate K-pop fans dedicated to bringing you the latest news and updates in the K-pop industry.</p>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you! Reach out with your questions or feedback.</p>
+        <p>Email: info@kpopparadise.com</p>
+        <p>Phone: 1234567890</p>
+    </section>
+
+</body>
+</html>
